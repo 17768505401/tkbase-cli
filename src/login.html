@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>泰康</title>
+    <style>
+        body{
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="bkimg" style="width: 100%;"  alt="">
+
+</body>
+
+<script>
+    const href = window.location.href;
+    console.log(href);
+    // // const href ="http://wanht.top/tkyljs/login.html?code=spmjSq9SWpWizOTtaTzZQpAojNpqFfW6FiBRTF-9tQE"
+    const index = href.indexOf('?');
+    const len = href.length;
+    // const code = href.substring(index+7, len)
+    const code = 1241
+    console.log(len,index);
+    let img = document.getElementById('bkimg')
+    img.src = `https://tkyljs.top/health/file/showImageNofilter?docId=${code}`
+    console.log('img',img.src);
+    // location.href = "index.html"
+</script>
+</html>
